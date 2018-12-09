@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ModalContent from '../ModalContent';
 import styles from './styles.module.css';
 
 class ModalBody extends Component {
@@ -48,7 +47,7 @@ class ModalBody extends Component {
 }
 
 ModalBody.propTypes = {
-  Element: PropTypes.instanceOf(ModalContent).isRequired,
+  Element: PropTypes.object.isRequired,
   shouldCloseOnClickOutside: PropTypes.bool.isRequired,
   shouldCloseOnPressEscape: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
