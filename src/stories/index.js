@@ -13,8 +13,7 @@ storiesOf('README', module)
         source: false,
         text: `
           # README
-          This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-          
+          - **Source code:** https://github.com/huonghk/the-new-york-times/
           - **Local deployment instructions:**
             ~~~
             cd the-new-york-times
