@@ -1,0 +1,14 @@
+.button {
+  font-weight: 700;
+  height: 40px;
+  width: 40px;
+  margin-right: 8px;
+}
+.button:hover {
+  color: rgb(219, 0, 27);
+  border: 2px solid rgb(219, 0, 27);
+}
+.active {
+  border: 2px solid black;
+  pointer-events: none;
+}

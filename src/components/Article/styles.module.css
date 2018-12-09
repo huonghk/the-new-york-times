@@ -1,0 +1,102 @@
+.main {
+
+}
+.left {
+  width: 252px;
+  height: 252px;
+  margin-bottom: 16px;
+}
+.right {
+  max-height: 252px;
+  overflow: hidden;
+}
+.source {
+  margin-bottom: 8px;
+}
+.date {
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 9.8px;
+  letter-spacing: 0.98px;
+  margin-bottom: 8px;
+}
+.snippet {
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.detail {
+  font-weight: 700;
+  color: #262626;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 11px;
+  line-height: 32px;
+}
+.detail:hover {
+  color: rgb(219, 0, 27);
+}
+
+/* === */
+
+.loading .source {
+  height: 22px;
+  width: 160px;
+}
+.loading .date {
+  height: 15px;
+  width: 102px;
+}
+.loading .snippet .block {
+  height: 20px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.loading .left,
+.loading .source,
+.loading .date,
+.loading .snippet .block {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderSkeleton;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background-image: linear-gradient(to left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+}
+
+@keyframes placeholderSkeleton {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+
+@media (min-width: 576px) {
+  .main {
+    display: flex;
+  }
+  .left {
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
+  .right {
+    flex: 1 1 0px;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
