@@ -1,7 +1,7 @@
 import placeholderSmall from './placeholder-252.png';
 
 // The pub_date returned by NYTimes API is not correct with ISO_8601 format
-// https://en.wikipedia.org/wiki/ISO_8601
+// http://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15
 // E.g: 2018-11-29T08:26:15+0000
 // This will lead to error to convert to Date object in some browsers
 const normalizeIsoDate = (str) => {
