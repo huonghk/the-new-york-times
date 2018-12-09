@@ -36,7 +36,7 @@ class ModalBody extends Component {
             onClick={onClose} ref={onRefCloseButton}
             aria-label="Close Modal"
           >
-            <span className={styles.icon}>×</span>
+            <svg className={styles.icon} viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30"></path></svg>
           </button>
           <div className={styles.body}>
             {Element.props.children}

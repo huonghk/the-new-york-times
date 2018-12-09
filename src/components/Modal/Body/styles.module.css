@@ -26,16 +26,20 @@
   width: 24px;
   height: 24px;
 }
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: transparent;
+  stroke: black;
+  stroke-linecap: round;
+  stroke-width: 2.2;
+}
 .close:hover {
   color: rgb(219, 0, 27);
   border: 2px solid rgb(219, 0, 27);
 }
-.icon {
-  font-size: 28px;
-  line-height: 1;
-  font-weight: 300;
-  position: relative;
-  top: -4px;
+.close:hover .icon {
+  stroke: rgb(219, 0, 27);
 }
 
 @media (min-width: 768px) {
@@ -48,10 +52,6 @@
   .close {
     width: 40px;
     height: 40px;
-  }
-  .icon {
-    font-size: 32px;
-    top: -3px;
   }
 }
 
