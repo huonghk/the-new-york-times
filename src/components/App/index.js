@@ -3,7 +3,6 @@ import actions from 'store/article/actions';
 import Container from './Container';
 
 const mapStateToProps = state => ({
-  loading: state.article.loading,
   articles: state.article.data,
 });
 
