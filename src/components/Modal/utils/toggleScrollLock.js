@@ -1,7 +1,5 @@
-let toggled = false;
+import './styles.css';
 
 export const toggleScrollLock = () => {
-  toggled = !toggled;
-  const overflow = toggled ? 'hidden' : 'auto';
-  document.querySelector('html').style.overflow = overflow;
+  document.querySelector('html').classList.toggle('lock-scroll');
 };
